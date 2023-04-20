@@ -23,7 +23,31 @@ $(function () {
 });
 
 
+// dayjs().format("HH"); current hour military time;
+
+// dayjs().format("hA"); 12hr clock captail AM PM ;
+
+
+// var currDate = dayjs().format('YYYY-MM-DD')
+// var time9am = dayjs(currDate + ' 09:00:00');
+
+// dayjs().format("hA");
+
+// // make sure to use diff for a conditional
+
+// var hours = [9, 10, 11, 12, 13, 14, 15, 16, 17];
+// $(hours).each( function(i, item){
+//     console.log(item);
+// });
+
 var curr = dayjs().format('YYYY-MM-DD')
 
-console.log(curr)
-console.log(hi)
+var currDate = dayjs().format('YYYY-MM-DD')
+
+dayjs(currDate).format('YYYY-MM-DD hh:mm:ss')
+
+dayjs(currDate + '12:00:00').format('YYYY-MM-DD hh:mm:ss A')
+
+var time12pm = dayjs(currDate + '12:00:00')
+
+
